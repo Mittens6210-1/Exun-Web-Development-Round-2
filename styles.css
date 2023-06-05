@@ -29,14 +29,6 @@ header {
     z-index: 99;
 }
 
-.logo {
-    position: absolute;
-    font-size: 2em;
-    color: black;
-    user-select: none;
-    top: 200px;
-}
-
 .navigation a {
     position: relative;
     font-size: 1.1em;
@@ -200,13 +192,13 @@ footer {
   width: 1349.98px;
 }
 
-.me,
-.if,
-.you {
+.this,
+.is,
+.the-last {
   white-space: nowrap;
 }
 
-.me,
-.you {
+.this,
+.the-last {
   margin: 0 300px;
 }
