@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(futuristic-cityscape.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    position: absolute;
+    font-size: 2em;
+    color: black;
+    user-select: none;
+    top: 200px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 70px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    width: 100%;
+    background: #FFF;
+    border-radius: 5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .Inductions {
+    width: 180px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #FFF;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #FFF;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: 0.5s;
+}
+
+.navigation .Inductions:hover {
+    background: #FFF;
+    color: #162938
+}
+
+.wrapper {
+  position: relative;
+  width: 600px;
+  height: 900px;
+  margin: 45px auto;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  top: 50px;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+
+.wrapper .form-box {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.wrapper .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  z-index: 1;
+}
+
+.wrapper h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.wrapper form div {
+  margin-bottom: 15px;
+}
+
+.wrapper form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.wrapper form input,
+.wrapper form textarea,
+.wrapper form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.wrapper form input[type="submit"],
+.wrapper form input[type="reset"] {
+  width: auto;
+  padding: 8px 20px;
+  margin-top: 10px;
+  background-color: #162938;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wrapper form input[type="submit"]:hover,
+.wrapper form input[type="reset"]:hover {
+  background-color: #0f1d2b;
+}
+
+.wrapper form input[type="checkbox"] {
+  margin-right: 4px;
+}
+
+.wrapper form textarea {
+  resize: vertical;
+}
+
+#yesnotifs {
+  position: absolute;
+  margin-left: 90px;
+  top: 747px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+footer {
+  position: absolute;
+  height: 60px;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  display: flex;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  top: 990px;
+  width: 1349.98px;
+}
+
+.me,
+.if,
+.you {
+  white-space: nowrap;
+}
+
+.me,
+.you {
+  margin: 0 300px;
+}
